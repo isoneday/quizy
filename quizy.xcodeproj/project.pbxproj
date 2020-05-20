@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45CEF163247518F40093DAF1 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEF162247518F40093DAF1 /* RoundButton.swift */; };
 		7FDD4CCD2472791D00D70793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD4CCC2472791D00D70793 /* AppDelegate.swift */; };
 		7FDD4CCF2472791D00D70793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD4CCE2472791D00D70793 /* SceneDelegate.swift */; };
 		7FDD4CD12472791D00D70793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD4CD02472791D00D70793 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45CEF162247518F40093DAF1 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		7FDD4CC92472791D00D70793 /* quizy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDD4CCC2472791D00D70793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FDD4CCE2472791D00D70793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				7FDD4CDA2472791E00D70793 /* LaunchScreen.storyboard */,
 				7FDD4CDD2472791E00D70793 /* Info.plist */,
 				7FDD4CD52472791D00D70793 /* quizy.xcdatamodeld */,
+				45CEF162247518F40093DAF1 /* RoundButton.swift */,
 			);
 			path = quizy;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FDD4CD72472791D00D70793 /* quizy.xcdatamodeld in Sources */,
+				45CEF163247518F40093DAF1 /* RoundButton.swift in Sources */,
 				7FDD4CD12472791D00D70793 /* ViewController.swift in Sources */,
 				7FDD4CCD2472791D00D70793 /* AppDelegate.swift in Sources */,
 				7FDD4CCF2472791D00D70793 /* SceneDelegate.swift in Sources */,
