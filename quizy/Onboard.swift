@@ -28,32 +28,30 @@ class Onboard: UIViewController, UIScrollViewDelegate {
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
+        
+        startBtn.isHidden = true
+        skipBtn.isHidden = false
         // Do any additional setup after loading the view.
     }
     
-    func showStartBtn(index: Int) {
+    func showAndHideBtn(index: Int) {
         if index == 2 {
             startBtn.isHidden = false
-        } else {
-            startBtn.isHidden = true
-        }
-    }
-    
-    func hideSkipBtn(index: Int) {
-        if index == 2 {
             skipBtn.isHidden = true
         } else {
-            startBtn.isHidden = false
+            startBtn.isHidden = true
+            skipBtn.isHidden = false
         }
     }
     
-    @IBAction func getStarted(_ sender: UIButton) {
+    @IBAction func getStarted(_ sender: Any) {
 
     }
     
-    @IBAction func skipButton(_ sender: UIButton) {
+    @IBAction func skipOnboard(_ sender: Any) {
         
     }
+    
     
     func createSlides() -> [Slide] {
 
@@ -85,35 +83,33 @@ class Onboard: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-            let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
-            pageControl.currentPage = Int(pageIndex)
-            
-            let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
-            let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
-            
-            // vertical
-            let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
-            let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
-            
-            let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
-            let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
-            
+        let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
+        pageControl.currentPage = Int(pageIndex)
         
-            let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
-            
-            if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
-                
-                slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
-                slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
-                
-            } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
-                slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
-                slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
-                
-            }
+        let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
+        let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
         
-        showStartBtn(index: Int(pageIndex))
-        hideSkipBtn(index: Int(pageIndex))
+        // vertical
+        let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
+        let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
+        
+        let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
+        let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
+        
+    
+        let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
+        
+        if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
+            
+            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
+            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
+            
+        } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
+            slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
+            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
+        }
+        
+        showAndHideBtn(index: Int(pageIndex))
     }
 }
 
