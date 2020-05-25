@@ -56,15 +56,15 @@ class Onboard: UIViewController, UIScrollViewDelegate {
     func createSlides() -> [Slide] {
 
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.imageView.image = UIImage(named: "900718")
+        slide1.imageView.image = UIImage(named: "jason-leung-andxLi4Kv8w-unsplash")
         slide1.infoLabel.text = "Create quizes and share them with your students"
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.imageView.image = UIImage(named: "yvxmD4")
+        slide2.imageView.image = UIImage(named: "kari-shea-2c80smWge9Y-unsplash")
         slide2.infoLabel.text = "Join The quiz and compete with your friends"
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.imageView.image = UIImage(named: "mountain_moon_nightscape_4k")
+        slide3.imageView.image = UIImage(named: "tomas-jasovsky-d5SZqLkpIrY-unsplash")
         slide3.infoLabel.text = "Use your reward and customize your profile"
 
         
