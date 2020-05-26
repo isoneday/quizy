@@ -19,6 +19,8 @@ class StartGuest: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        avatarImage.image = UIImage(named: "blank-profile-picture-973460_1280")
 
         // Do any additional setup after loading the view.
     }
