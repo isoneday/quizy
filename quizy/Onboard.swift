@@ -85,30 +85,7 @@ class Onboard: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
-        
-        let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
-        let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
-        
-        // vertical
-        let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
-        let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
-        
-        let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
-        let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
-        
-    
-        let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
-        
-        if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
-            
-            slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
-            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
-            
-        } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
-            slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
-            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
-        }
-        
+
         showAndHideBtn(index: Int(pageIndex))
     }
 }
