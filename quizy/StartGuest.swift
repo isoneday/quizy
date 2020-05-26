@@ -22,8 +22,14 @@ class StartGuest: UIViewController {
         super.viewDidLoad()
         
         avatarImage.image = UIImage(named: "blank-profile-picture-973460_1280")
-
+        circularImage()
         // Do any additional setup after loading the view.
+    }
+    
+    func circularImage() {
+        avatarImage.layer.cornerRadius = avatarImage.frame.size.height / 2
+        avatarImage.layer.masksToBounds = true
+        avatarImage.layer.borderWidth = 0
     }
     
     @IBAction func createQuiz(_ sender: Any) {
