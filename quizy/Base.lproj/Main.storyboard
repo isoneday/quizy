@@ -75,6 +75,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BER-zZ-lMJ"/>
                     <connections>
                         <outlet property="pageControl" destination="aO5-RG-Csa" id="rgX-T1-lLz"/>
                         <outlet property="scrollView" destination="6sZ-6T-8YI" id="1Jq-47-ws6"/>
@@ -196,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwT-YT-NSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="52"/>
+            <point key="canvasLocation" x="-652" y="805"/>
         </scene>
         <!--Shop-->
         <scene sceneID="9l8-2F-8W1">
