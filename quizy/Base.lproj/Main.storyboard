@@ -96,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vdi-G2-Hwl" kind="relationship" relationship="rootViewController" id="jjP-zs-Vtd"/>
+                        <segue destination="vdi-G2-Hwl" kind="relationship" relationship="rootViewController" id="NsC-1A-rly"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8q-YM-yF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,21 +171,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-if-qpI">
-                                <rect key="frame" x="357" y="44" width="41" height="30"/>
+                                <rect key="frame" x="357" y="88" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guest">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2j-u0-ksw">
-                                <rect key="frame" x="329" y="49" width="20" height="20"/>
+                                <rect key="frame" x="329" y="93" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XEE-uz-ZgV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cbo-fA-doJ"/>
+                    <navigationItem key="navigationItem" id="f5H-Og-Hte"/>
                     <connections>
                         <outlet property="avatarImage" destination="Z2j-u0-ksw" id="ggA-m2-eIT"/>
                         <outlet property="createQuizBtn" destination="QCa-HJ-7EJ" id="RYa-gH-r27"/>
@@ -201,7 +201,6 @@
         <!--Shop-->
         <scene sceneID="9l8-2F-8W1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-JF-WAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="gBU-6b-Q82" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Shop" image="cart" catalog="system" id="xbG-28-wB8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jbQ-a3-3KG">
@@ -209,6 +208,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-JF-WAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1277" y="52"/>
         </scene>

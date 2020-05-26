@@ -16,6 +16,7 @@ class StartGuest: UIViewController {
     @IBOutlet weak var joinQuizBtn: RoundButton!
     @IBOutlet weak var profileBtn: UIButton!
     @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var navBar: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
