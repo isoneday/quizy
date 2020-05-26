@@ -213,6 +213,38 @@
             </objects>
             <point key="canvasLocation" x="1277" y="52"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7p9-k7-rwA">
+            <objects>
+                <navigationController id="VTU-8u-aGj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="16f-se-YZj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pfA-tw-a82" kind="relationship" relationship="rootViewController" id="1Ue-YI-THu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iy3-Vk-H2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-828"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0lX-t9-aV7">
+            <objects>
+                <viewController id="pfA-tw-a82" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iu8-Ts-2qT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iwk-Gp-71i"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rdT-aQ-qls"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2al-Iw-XXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="-828"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
