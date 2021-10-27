@@ -5,7 +5,8 @@
 //  Created by Iswandi Saputra on 18/05/20.
 //  Copyright © 2020 group8mc2. All rights reserved.
 //
-
+// this is old version coredata
+//check for the updates
 import UIKit
 import CoreData
 
